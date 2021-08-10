@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.steve.logincompose.ui.theme.LoginComposeTheme
@@ -53,7 +54,7 @@ fun LoginScreen(mContext: Context){
         ButtonFBLogin()
         Spacer(modifier = Modifier.height(120.dp))
         ButtonRegister(onClick = {
-            mContext.startActivity(Intent(mContext, RegisterActivity::class.java))
+            mContext.startActivity(Intent(mContext, HomeActivity::class.java))
         })
 
     }
@@ -131,6 +132,14 @@ private fun ButtonRegister(onClick: () -> Unit){
 
     }
 
+}
+
+@Preview
+@Composable
+fun PreviewLoginScreen(){
+    LoginComposeTheme {
+
+    }
 }
 
 

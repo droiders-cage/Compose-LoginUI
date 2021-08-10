@@ -33,7 +33,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             LoginComposeTheme{
-                androidx.compose.material.Surface(color = MaterialTheme.colors.background) {
+                Surface(color = MaterialTheme.colors.background) {
                     RegisterScreen(mContext = this@RegisterActivity)
 //                    PhotoSelector()
                 }
